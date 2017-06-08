@@ -19,6 +19,6 @@
         <module>ssm</module>
         <module>lucene</module>
         <module>shiro</module>
+        <module>springboot</module>
     </modules>
-
 </project>
