@@ -1,0 +1,6 @@
+Upgrade to Apache Lucene 4.10.3
+
+Issues fixed in this release: #13
+Apache License 2.0 abbreviation changed from ASL 2.0 to ALv2
+
+Thanks to respective contributors!

@@ -1,0 +1,48 @@
+The Apache Quickstep (incubating) team is pleased to announce the release
+of Quickstep 0.1.0 (our first release!)
+
+Quickstep is a high-performance SQL database which auto-manages
+configuration. Because Quickstep has very few tuning parameters, it can be
+efficiently deployed in a variety of environments.
+
+The release is available @ https://quickstep.incubator.apache.org/release
+
+
+We'd like to thank our mentors who patiently helped us understand Apache
+IP, introduce us to Apache RAT, and mainly for their help with day-to-day
+questions related to the Apache way of things. Especially big thanks to our
+very open mentors Roman, and Julian.
+
+Also a big thanks to Josh, and John who in addition to our mentors, helped
+review and give feedback for our release.
+
+Finally, a big thanks to Jignesh for driving the Apache transition. And, of
+course, all of our committers for making Quickstep!
+
+Thank you,
+
+The Apache Quickstep (incubating) team
+
+_____
+
+Link to artifacts:
+https://dist.apache.org/repos/dist/release/incubator/quickstep/0.1.0/
+
+Link to release Git Head:
+https://git-wip-us.apache.org/repos/asf?p=incubator-quickstep.git;a=shortlog;h=refs/heads/quickstep-0.1.0
+
+Link to getting-started guide:
+https://github.com/apache/incubator-quickstep/blob/master/BUILDING.md
+
+Signed with:
+http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xFABE32325A29899A
+
+_____
+
+Disclaimer
+
+Apache Quickstep is an effort undergoing incubation at The Apache Software
+Foundation (ASF),
+sponsored by the name of Apache Incubator PMC. Incubation is required of
+all newly accepted
+projects until a further review indicates that the infrastructure,
