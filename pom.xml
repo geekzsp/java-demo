@@ -20,5 +20,7 @@
         <module>lucene</module>
         <module>shiro</module>
         <module>springboot</module>
+        <module>javase</module>
+        <module>javaweb</module>
     </modules>
 </project>
