@@ -68,5 +68,72 @@ boolean | 1  |
 int 移位>32 或者long 移位>64 的先求余数 。不发生数字丢失的话 左移n位等于 乘与2的n次方，右移 除以2的n次方。
 9. 逻辑运算符： &&、&、||、|、!、^。
 # 第4章 流程控制和数组
-1. switch
-
+1. switch语句后面的控制表达式的数据类型只能是byte、short、char、int、四种整数类型，枚举类型和String类型（Java7才允许），不能是boolean类型。
+2. Java的数组既可以存储基本类型的数据，也可以存储引用类型的数据，只要所有的数组元素具有相同的类型即可。数组也是一种数据类型，他本身是一种引用类型。
+3. `type[] arrayname;推荐` `type arrayName[]` 
+4. 数组未指定初始值时，整数类型为0，浮点类型为0.0，字符类型为'\u0000'，布尔类型为false，引用类型为null。
+5. `java.lang.ArrayIndexOutBoundsException:N` 数组越界异常
+6. 需要改变数组元素的值，不能使用foreach循环
+7. 一些基本类型的变量和对象的引用变量都是在函数的栈内存中分配，堆内存用于存放由new创建的对象和数组
+8. 基本数据类型的初始化
+ ![mark](http://o7k6tx0fl.bkt.clouddn.com/images/170612/Lh89aChH9J.png?imageslim)
+9. 引用数据类型的初始化
+ ![mark](http://o7k6tx0fl.bkt.clouddn.com/images/170612/k6fCmBgA7k.png?imageslim)
+10. 二维数组 `int[][] values=new int[4][]`
+  `int[][] values=new int[4][3]`
+11.Arrays工具类：
+   ```
+        //Arrays工具类
+        Arrays.sort(arrs1);//排序
+        System.out.println(Arrays.toString(arrs1));
+        int i = Arrays.binarySearch(arrs1, 3);//二分法查找 要求必须升序 返回位置从0开始，不包含则返回负数
+        System.out.println(i);
+        int[] ints = Arrays.copyOf(arrs1, 7);//复制
+        System.out.println(Arrays.toString(ints));
+        Arrays.equals(arrs1, arrs2);//长度 和内容相同返回true
+        Arrays.fill(arrs1, 99);//全部填充
+        System.out.println(Arrays.toString(arrs1));
+        int[] sarr1 = {1, 3, 5, 7};
+        int[] sarr2 = {2, 4, 6, 8};
+        System.arraycopy(sarr1, 3, sarr2, 0, 1);
+        System.out.println(Arrays.toString(sarr2));
+        Arrays.parallelSort(sarr2);//并行 排序
+   ```
+# 第5章面向对象
+1. 定义成员变量的语法格式：`[修饰符] 类型 成员变量名 [=默认值]`
+2. this关键字最大的作用就是让类中的一个方法，访问该类里的另一个方法或者实例变量。谁在调用这个方法 this就代表谁。
+3. static修饰的方法不能使用this关键词调用。静态成员不能直接访问非静态成员
+4. 构造器，成员变量，方法
+5. **Java里方法传递的方式只有一种：值传递。所谓的值传递，就是将实际参数值的副本（复制品）传入方法内，而参数本身不会受到影响 ，参数是对象的话也是传递的引用副本**
+6. JDK1.5之后引入了形参可变的方式，类型后加三个. 被当成数组传入。可变的参数只能有一个而且在最后
+7. 递归要想已知方向递归
+8. 重载：方法名相同，参数列表相同。和方法的返回值类型和修饰符无关。
+9. ![mark](http://o7k6tx0fl.bkt.clouddn.com/images/170613/DK3AdJaIbH.png?imageslim)
+10. Java允许实例来访问static修饰的成员变量本身就是一种错误
+11. 代码块局部变量作用范围，从定义 到代码块结束
+12. Java允许局部变量和成员变量同名，如果方法里的局部变量和成员变量同名，局部变量会覆盖成员变量，
+如果需要引用被覆盖的成员变量，这可使用this（对于实例变量）或者类名（对于类变量）调用
+13. 成员变量，java会帮助你初始化，局部变量，则需要程序员自己初始化。
+    对于成员变量。不管程序有没有显示的初始化，Java  虚拟机都会先自动给它初始化为默认值。
+14. 局部变量保存在所在方法的栈内存中，如果是基本类型直接保存，引用类型保存的是地址，栈内存无需垃圾回收，随着方法或者代码块的运行结束而结束。因为局部变量只保存基本类型的值或者对象的引用，因此局部变量所占的内存区通常比较小
+15. 比如眼睛的数量用类变量 ，身高体重不同可以用实例变量。
+16. 封装：指的是净对象的状态信息隐藏在对象内部，不允许外部程序直接访问对象内部信息。
+17. 
+    ![mark](http://o7k6tx0fl.bkt.clouddn.com/images/170613/bDchLa5bHc.png?imageslim)
+一般修饰成员变量使用private，如果使用protected来修饰一个方法，通常是希望其子类来重写这个方法。
+外部类只能使用public和默认。如果一个Java源文件里定义了一个public修饰的类，则这个源文件的文件名必须和public修饰的类的类名相同。
+18. 关于访问控制符的使用，存在如下几条原则 
+ - 类里的绝大部分成员变量都应该使用private修饰，只有一些static修饰的，类型全局变量的成员变量，才可能考虑使用public修饰。除此之外，有些方法只用于辅助实现该类的其他方法，这些方法也应该使用private修饰。
+ - 如果某个类主要用作其他类的父类，该类里包含的大部分方法可能仅希望被其子类重写，而不想被外界直接调用，这应该使用protected修饰这些方法。
+ - 希望暴露出来给其他类自由调用的方法应该使用public修饰。因此，类的构造器通过使用public修饰，从而允许在其他地方创建该类的实例。因为外部类通常都希望被其他类自由使用，所以大部分外部类都使用public修饰。
+ 19. import 中的*号表示该包下的所有类 但是不包含子包的类
+ 20. Java默认为所有源文件导入了java.lang类
+ 21. JDK1.5 引用 import static 静态导入静态成员变量或者静态方法
+ ```
+    import  static  java.lang.Math.*;
+    import  static  java.lang.System.*;
+    //静态导入
+        double sqrt = sqrt(256);
+        out.print(sqrt);
+        out.print(PI);
+```
