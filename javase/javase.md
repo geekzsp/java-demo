@@ -82,7 +82,7 @@ int 移位>32 或者long 移位>64 的先求余数 。不发生数字丢失的�
 10. 二维数组 `int[][] values=new int[4][]`
   `int[][] values=new int[4][3]`
 11.Arrays工具类：
-   ```
+   ```java
         //Arrays工具类
         Arrays.sort(arrs1);//排序
         System.out.println(Arrays.toString(arrs1));
@@ -129,7 +129,7 @@ int 移位>32 或者long 移位>64 的先求余数 。不发生数字丢失的�
  19. import 中的*号表示该包下的所有类 但是不包含子包的类
  20. Java默认为所有源文件导入了java.lang类
  21. JDK1.5 引用 import static 静态导入静态成员变量或者静态方法
- ```
+ ```java
     import  static  java.lang.Math.*;
     import  static  java.lang.System.*;
     //静态导入
