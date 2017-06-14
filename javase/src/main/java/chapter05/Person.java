@@ -8,8 +8,30 @@ package chapter05;
  * @author 张士鹏
  */
 public class Person {
-    public  static  int id=1;
-   public  static  void test(){
-       System.out.println("");
-   }
+    private String name;
+    private String age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age='" + age + '\'' +
+                '}';
+    }
 }

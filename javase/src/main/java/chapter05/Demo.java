@@ -1,5 +1,7 @@
 package chapter05;
 
+import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
+
 /**
  * Description:
  * Blog:	http://blog.csdn.net/mixi9760
@@ -9,8 +11,6 @@ package chapter05;
  */
 public class Demo {
     public static void main(String[] args) {
-        Person person = new Person();
-        Person.test();
         String[] names = {"张三", "李四", "王五"};
         for (String name : names) {
             System.out.println(name);
@@ -19,7 +19,23 @@ public class Demo {
         for (String name : names) {
             System.out.println(name);
         }
-        System.out.println(""+test2(10));
+        System.out.println("" + test2(10));
+
+        Person person = new Person();
+        person.setName("张Demo");
+        person.setAge("15");
+        if (person instanceof Student){
+            System.out.println("yes");
+        }else {
+            System.out.println("no");
+        }
+        Person person1=new Student(); //向上转型
+        if (person1 instanceof Student){
+            Student  student=(Student)person1;//强制转换
+        }
+
+
+
     }
 
     /**
@@ -35,6 +51,7 @@ public class Demo {
     /**
      * 已知有一个数列：f(0)=1,f(1)=4,f(n+2)=2*f(n+1)+f(n);
      * 求f（10）
+     *
      * @param n
      * @return
      */
