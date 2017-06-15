@@ -1,4 +1,4 @@
-package chapter05;
+package chapter05and06;
 
 /**
  * Description: 鸵鸟
@@ -7,13 +7,18 @@ package chapter05;
  * author：		张士鹏
  */
 public class Ostrich extends Bird {
+    public Ostrich() {
+        super();
+    }
+
     @Override
     public void fly() {
         //super.fly();
         System.out.println("我只能在地上奔跑");
     }
+
     public static void main(String[] args) {
-        new Bird().fly();
+        //   new Bird().fly();
         new Ostrich().fly();
     }
 }

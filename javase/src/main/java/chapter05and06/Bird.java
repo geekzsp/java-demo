@@ -1,4 +1,4 @@
-package chapter05;
+package chapter05and06;
 
 /**
  * Description: 鸟类
@@ -7,6 +7,12 @@ package chapter05;
  * author：		张士鹏
  */
 public class Bird {
+    public Bird(){
+        System.out.println("父类无参构造器");
+    }
+    public Bird(int bird){
+        System.out.println("有参构造器");
+    }
     public void fly() {
         System.out.println("我在天空自由的飞翔");
     }

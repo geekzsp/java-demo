@@ -1,4 +1,4 @@
-package chapter05;
+package chapter05and06;
 import  static  java.lang.Math.*;
 import  static  java.lang.System.*;
 /**

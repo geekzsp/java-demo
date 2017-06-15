@@ -1,6 +1,4 @@
-package chapter05;
-
-import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
+package chapter05and06;
 
 /**
  * Description:
@@ -33,9 +31,6 @@ public class Demo {
         if (person1 instanceof Student){
             Student  student=(Student)person1;//强制转换
         }
-
-
-
     }
 
     /**

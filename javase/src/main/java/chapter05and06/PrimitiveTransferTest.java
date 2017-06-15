@@ -1,6 +1,4 @@
-package chapter05;
-
-import java.awt.*;
+package chapter05and06;
 
 /**
  * Description:方法参数传递
