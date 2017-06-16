@@ -192,9 +192,5 @@ int 移位>32 或者long 移位>64 的先求余数 。不发生数字丢失的�
 19. Java修饰符使用范围总表
 ![mark](http://o7k6tx0fl.bkt.clouddn.com/images/170616/Bdh5i1IF7I.png?imageslim)
 # 第七章 Java基础类库
-1. Scanner
-[Scanner](./chapter07/ScannerDemo.java)
-2. System
-```java
-    
-```
+1. [Scanner](src/main/java/chapter07/ScannerDemo.java)
+2. [System](src/main/java/chapter07/SystemDemo.java)
