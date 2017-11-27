@@ -10,6 +10,7 @@ import java.util.Scanner;
  * author：		张士鹏
  */
 public class ScannerDemo {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //增加下面一行只把回车作为分隔符
