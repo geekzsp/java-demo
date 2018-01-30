@@ -1,5 +1,6 @@
-package cn.zsp.service;
+package cn.zsp.service.impl;
 
+import cn.zsp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;

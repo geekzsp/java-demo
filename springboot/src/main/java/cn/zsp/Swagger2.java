@@ -18,7 +18,7 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("cn.zsp.web"))
+                .apis(RequestHandlerSelectors.basePackage("cn.zsp.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

@@ -1,6 +1,8 @@
 package chapter07;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 /**
@@ -12,6 +14,9 @@ import java.util.Scanner;
 public class ScannerDemo {
 
     public static void main(String[] args) {
+        //FileInputStream fileInputStream=new FileInputStream(new File("/data/a.txt"));
+        //String a;
+        //System.out.println(a);
         Scanner sc = new Scanner(System.in);
         //增加下面一行只把回车作为分隔符
         //sc.useDelimiter("\n");
@@ -19,5 +24,6 @@ public class ScannerDemo {
         while (sc.hasNext()) {
             System.out.println("键盘输入的内容：" + sc.next());
         }
+
     }
 }

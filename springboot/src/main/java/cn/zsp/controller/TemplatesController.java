@@ -1,4 +1,4 @@
-package cn.zsp.web;
+package cn.zsp.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

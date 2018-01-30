@@ -4,6 +4,7 @@ import org.junit.Test;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.NumberFormat;
+import java.util.UUID;
 
 /**
  * 类描述
@@ -40,6 +41,8 @@ public class BigDecimalDemo {
         System.out.println("利率:\t" + percent.format(interestRate));  //利率: 0.8%
         System.out.println("利息:\t" + currency.format(interest)); //利息: ￥1.20
 
-
+        System.out.println(System.currentTimeMillis());
+        System.out.println(System.nanoTime());
+        System.out.println(UUID.randomUUID());
     }
 }

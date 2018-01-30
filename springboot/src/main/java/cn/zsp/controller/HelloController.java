@@ -1,6 +1,7 @@
-package cn.zsp.web;
+package cn.zsp.controller;
 
 import cn.zsp.execption.MyException;
+import org.codehaus.groovy.runtime.powerassert.SourceText;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public  String index()  {
-
+        System.out.println(System.nanoTime());
         return "hello,world3";
     }
 

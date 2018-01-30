@@ -1,4 +1,4 @@
-package cn.zsp.web;
+package cn.zsp.controller;
 
 import cn.zsp.pojo.User;
 import io.swagger.annotations.ApiImplicitParam;

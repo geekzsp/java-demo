@@ -35,7 +35,7 @@
         <filter-name>CharacterEncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
-    <!-- druid 数据源，用于采集 web-jdbc 关联监控的数据 -->
+    <!-- druid 数据源，用于采集 controller-jdbc 关联监控的数据 -->
     <!-- 具体参考官网：https://github.com/alibaba/druid/wiki/%E9%85%8D%E7%BD%AE_%E9%85%8D%E7%BD%AEWebStatFilter-->
     <filter>
         <filter-name>DruidWebStatFilter</filter-name>

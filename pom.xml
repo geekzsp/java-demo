@@ -22,5 +22,6 @@
         <module>springboot</module>
         <module>javase</module>
         <module>javaweb</module>
+        <module>mybatis</module>
     </modules>
 </project>
