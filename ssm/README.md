@@ -46,6 +46,26 @@ springmvc.xml 头文件一定要是4.0及以上才可以
         return "测试中文乱码";
     }
 ```
+方式三： 
+
+         解决办法：
+
+                   a、更改服务器发送数据的默认编码
+
+                            response.setCharacterEncoding("UTF-8");
+
+                            还要通知客户端解码方式
+
+                            response.setHeader("Content-Type","text/html;charset=UTF-8");
+
+ 
+
+                   b、因为经常要变动编码方式，因此SerlvetResponse提供了一个更好用的方法
+
+                            response.setContentType("text/html;charset=UTF-8");
+
+                            此方法的功效等同于a中的两行代码
+                            
 # mybatis相关
 # maven mybatis自动生成插件
 pom.xml
