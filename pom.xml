@@ -23,5 +23,6 @@
         <module>javase</module>
         <module>javaweb</module>
         <module>mybatis</module>
+        <module>design-patterns</module>
     </modules>
 </project>
