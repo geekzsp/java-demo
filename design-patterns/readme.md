@@ -6,7 +6,7 @@
 * 单态模式 http://www.cnblogs.com/java-my-life/archive/2012/03/31/2425631.html
 * (简单工厂模式)简单工厂模式是属于创建型模式，又叫做静态工厂方法（Static Factory Method）模式，但不属于23种GOF设计模式之一。简单工厂模式是由一个工厂对象决定创建出哪一种产品类的实例。简单工厂模式是工厂模式家族中最简单实用的模式，可以理解为是不同工厂模式的一个特殊实现。
 ## 结构型
-* 适配器模式 http://www.cnblogs.com/java-my-life/archive/2012/04/13/2442795.html
+* 适配器模式 http://www.cnblogs.com/java-my-life/archive/2012/04/13/2442795.html  https://www.cnblogs.com/V1haoge/p/6479118.html
 * 桥接模式 http://blog.csdn.net/jason0539/article/details/22568865
 * 组合模式 http://blog.csdn.net/jason0539/article/details/22642281
 * 外观模式 http://blog.csdn.net/jason0539/article/details/22775311
