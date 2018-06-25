@@ -1,4 +1,4 @@
-package com.zsp.design.patterns.demo7_3;
+package com.zsp.design.patterns.demo8;
 
 /**
  * 桥梁类(抽象类)

@@ -1,4 +1,4 @@
-package com.zsp.design.patterns.demo9;
+package com.zsp.design.patterns.demo10;
 
 /**
  * @author: zhangshipeng
