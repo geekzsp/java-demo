@@ -24,5 +24,7 @@
         <module>javaweb</module>
         <module>mybatis</module>
         <module>design-patterns</module>
+        <module>think-in-java</module>
+        <module>lambda</module>
     </modules>
 </project>

@@ -10,7 +10,6 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>mybatis</artifactId>
-    <packaging>war</packaging>
     <name>A custom project using myfaces</name>
     <url>http://www.myorganization.org</url>
 

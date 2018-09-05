@@ -9,10 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>ssm</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>../shiro</module>
-    </modules>
+    <packaging>war</packaging>
+
 
     <!-- 集中定义依赖版本号 -->
     <properties>
