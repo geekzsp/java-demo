@@ -138,11 +138,12 @@ public class HttpClientUtils {
     }
 
     public static void main(String[] args) {
-        for (int i = 0; i < 100; i++) {
             long l = System.currentTimeMillis();
-            HttpClientUtils.doGet("http://www.baidu.com");
+            String s = HttpClientUtils.doGet("http://120.210.217.1/gitv_live/HNWS-HD/HNWS-HD.m3u8?starttime=1469509516000");
+            System.out.println(s);
             System.out.println(System.currentTimeMillis()-l);
-        }
+
+
 
     }
 }

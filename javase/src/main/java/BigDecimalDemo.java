@@ -12,7 +12,7 @@ import java.util.UUID;
  * @author zhangshipeng
  * @date 2017/11/23 下午4:35
  */
-public class BigDecimalDemo {
+ class BigDecimalDemo {
     @Test
     public void bigDecimalTest() {
         System.out.println("===========普通===========");

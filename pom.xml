@@ -26,5 +26,7 @@
         <module>design-patterns</module>
         <module>think-in-java</module>
         <module>lambda</module>
+        <module>machugaoxiao</module>
+        <module>java-io</module>
     </modules>
 </project>
