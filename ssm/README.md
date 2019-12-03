@@ -18,7 +18,7 @@ web.xml
         </filter-mapping>
 ```
 * get乱码              
-方式一：设置mysql 编码为utf-8 （一劳永逸）           
+方式一：设置tomcat 编码为utf-8 （一劳永逸）           
 方式二：手动解码再编码
 ```java
   String string=new String(result.getBytes("iso8859-1"),"utf-8");
