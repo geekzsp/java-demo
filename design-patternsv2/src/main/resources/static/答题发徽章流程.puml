@@ -1,0 +1,62 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+:答题;
+if(通过限流器==1) then(yes)
+    if(处于答题活动中) then(yes)
+           if (题目属于今天?) then (yes)
+               if(SQL原子扣减可用答题次数==1) then(yes)
+                     if(回答成功？) then(yes)
+                           :给称号;
+                           :发放优惠券;
+                           if(今日剩余关键徽章数量>0&&该用户没有获取过关键徽章) then(yes)
+                                :5种徽章随机;
+                                if(随机到关键徽章) then(yes)
+                                    if(原子扣减关键徽章数量==1) then(yes)
+                                        :继续;
+                                    else (no)
+                                       :其他4种徽章随机;
+                                    endif
+                                else (no)
+
+                                endif
+                           else (no)
+                                :其他4种徽章随机;
+                           endif
+                           :给徽章;
+                           :记录用户答题日志+奖励;
+                           if(集齐徽章) then(yes)
+                                :记录集齐记录 (唯一索引);
+                                :增加抽奖机会;
+                           else (no)
+                           endif
+
+                    else (no)
+                       :给称号;
+                       :发放优惠券;
+                      stop
+                    endif
+               else (no)
+                 stop
+               endif
+            else (no)
+             stop
+            endif
+    else (no)
+        stop
+    endif
+
+else (no)
+    stop
+endif
+
+
+
+stop
+@enduml
+if(SQL原子扣减可用答题次数==1) then(yes)
+
+else (no)
+    stop
+endif

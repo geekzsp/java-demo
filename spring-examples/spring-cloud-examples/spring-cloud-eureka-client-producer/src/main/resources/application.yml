@@ -1,0 +1,17 @@
+server:
+  port: 8085
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+eureka:
+  client:
+    service-url:
+      #设置与Eureka Server 地址
+      defaultZone: http://localhost:8083/eureka/
+spring:
+  application:
+    name: producer-example
+
+

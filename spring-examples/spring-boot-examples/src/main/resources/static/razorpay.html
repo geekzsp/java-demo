@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+    function getQueryVariable(variable) {
+        let query = window.location.search.substring(1);
+        let vars = query.split("&");
+        for (let i = 0; i < vars.length; i++) {
+            let pair = vars[i].split("=");
+            if (pair[0] == variable) {
+                return pair[1];
+            }
+        }
+        return false;
+    }
+</script>
+<script>
+    var payload = JSON.parse(window.atob(getQueryVariable("payload")));
+    var options = {
+        "key": payload.key,
+        "amount": payload.amount,
+        "currency": payload.currency,
+        "name": payload.name,
+        "description": payload.description,
+        "image": payload.image,
+        "order_id": payload.id,
+        "handler": function (response) {
+            // alert(response.razorpay_payment_id);
+            // alert(response.razorpay_order_id);
+            // alert(response.razorpay_signature)
+            window.location.href = payload.callBackUrl;
+        },
+        callback_url: 'https://cash-pay.cashmama.in/ok',
+        redirect: true
+    };
+    var rzp1 = new Razorpay(options);
+    rzp1.open();
+</script>
+
+</body>
+</html>

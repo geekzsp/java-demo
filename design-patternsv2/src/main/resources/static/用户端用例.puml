@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+
+:用户: as User
+User --> (答题)
+User --> (抽奖)
+User --> (分享)
+User --> (查看徽章详情)
+User --> (查看线索)
+User --> (浏览答题结果页关联的CMS页面)
+package 订阅{
+User --> (订阅答题开始提醒)
+User --> (订阅抽奖开始提醒)
+User --> (订阅明日答题提醒)
+}
+@enduml
