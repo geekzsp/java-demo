@@ -29,4 +29,12 @@
         <module>machugaoxiao</module>
         <module>java-io</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.7.18</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 </project>
